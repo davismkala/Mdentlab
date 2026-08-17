@@ -20,6 +20,9 @@ dist-ssr
 .wrangler/
 .dev.vars
 
+# Downloaded source-site images (run download-mdentlab-images.sh to regenerate)
+mdentlab-images/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,0 +1,21 @@
+// Cloudflare Workers configuration for the MDent site.
+//
+// The build (`bun run build`) uses Nitro's `cloudflare-module` preset
+// (wired up by @lovable.dev/vite-tanstack-config) and outputs a Workers
+// module at .output/server/index.mjs plus static assets in .output/public.
+// This file tells Wrangler how to deploy that output.
+//
+// See docs/cloudflare-deploy.md for the full setup + deploy walkthrough.
+{
+  "name": "mdentlab",
+  "main": ".output/server/index.mjs",
+  "compatibility_date": "2026-08-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".output/public",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
