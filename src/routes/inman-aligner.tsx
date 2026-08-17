@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Inman Aligner | MDent — Middle East Dental Laboratory";
-const description = "MDent is a certified Inman Aligner laboratory serving clinics across the UAE and GCC.";
+const description =
+  "MDent is a certified Inman Aligner laboratory serving clinics across the UAE and GCC.";
 
 export const Route = createFileRoute("/inman-aligner")({
   head: () => ({

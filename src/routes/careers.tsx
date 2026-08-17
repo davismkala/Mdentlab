@@ -51,13 +51,13 @@ function CareersPage() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     const next: Record<string, string> = {};
-    if (!values.full_name.trim()) next['full_name'] = "Please enter your full name.";
+    if (!values.full_name.trim()) next["full_name"] = "Please enter your full name.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(values.email.trim()))
-      next['email'] = "Please enter a valid email address.";
+      next["email"] = "Please enter a valid email address.";
     if (file) {
       const ext = file.name.slice(file.name.lastIndexOf(".")).toLowerCase();
-      if (!ALLOWED.includes(ext)) next['cv'] = "CV must be a PDF, DOC or DOCX file.";
-      else if (file.size > MAX_BYTES) next['cv'] = "CV must be 5MB or smaller.";
+      if (!ALLOWED.includes(ext)) next["cv"] = "CV must be a PDF, DOC or DOCX file.";
+      else if (file.size > MAX_BYTES) next["cv"] = "CV must be 5MB or smaller.";
     }
     setErrors(next);
     if (Object.keys(next).length) return;
@@ -119,10 +119,10 @@ function CareersPage() {
             />
           ) : null}
           <div className="grid gap-6 sm:grid-cols-2">
-            <Field label="Full Name" name="full_name" required error={errors['full_name']}>
+            <Field label="Full Name" name="full_name" required error={errors["full_name"]}>
               <TextInput id="full_name" value={values.full_name} onChange={set("full_name")} />
             </Field>
-            <Field label="Email" name="email" required error={errors['email']}>
+            <Field label="Email" name="email" required error={errors["email"]}>
               <TextInput id="email" type="email" value={values.email} onChange={set("email")} />
             </Field>
             <Field label="Phone" name="phone">
@@ -138,7 +138,7 @@ function CareersPage() {
                 onChange={set("years_experience")}
               />
             </Field>
-            <Field label="CV (PDF, DOC, DOCX — max 5MB)" name="cv" error={errors['cv']}>
+            <Field label="CV (PDF, DOC, DOCX — max 5MB)" name="cv" error={errors["cv"]}>
               <input
                 id="cv"
                 ref={fileRef}

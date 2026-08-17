@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Veneers | MDent — Middle East Dental Laboratory";
-const description = "High-quality dental veneers crafted in Dubai by MDent — fit, durability and natural beauty for every case.";
+const description =
+  "High-quality dental veneers crafted in Dubai by MDent — fit, durability and natural beauty for every case.";
 
 export const Route = createFileRoute("/veneers")({
   head: () => ({

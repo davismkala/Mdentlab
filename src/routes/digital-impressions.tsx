@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Digital Impressions | MDent — Middle East Dental Laboratory";
-const description = "How to send digital impressions to MDent from iTero, 3Shape, Sirona and Medit scanners.";
+const description =
+  "How to send digital impressions to MDent from iTero, 3Shape, Sirona and Medit scanners.";
 
 export const Route = createFileRoute("/digital-impressions")({
   head: () => ({

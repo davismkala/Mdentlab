@@ -1,6 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/mdent/Hero";
-import { ImageTextSection, NumberedBenefitList, Section, SubHeading } from "@/components/mdent/Sections";
+import {
+  ImageTextSection,
+  NumberedBenefitList,
+  Section,
+  SubHeading,
+} from "@/components/mdent/Sections";
 import { EyebrowHeading } from "@/components/mdent/Eyebrow";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { Reveal } from "@/components/mdent/Reveal";
@@ -37,7 +42,10 @@ function CrownsPage() {
           functionality. At MDent, we offer a comprehensive range of high-quality crowns to restore
           your patients' smiles and ensure optimal oral health.
         </p>
-        <p>MDent offers a variety of crown materials to best suit your patients' needs and preferences.</p>
+        <p>
+          MDent offers a variety of crown materials to best suit your patients' needs and
+          preferences.
+        </p>
         <div className="mt-8">
           <PlusLink to="/booking-form" variant="solid">
             Get in Touch
@@ -62,9 +70,9 @@ function CrownsPage() {
         </p>
         <p>
           Our layered zirconium crowns are meticulously crafted to replicate the translucency and
-          color gradients of natural teeth, ensuring a seamless integration with the patient's smile.
-          The use of Sagemax zirconia ensures that our crowns are not only strong and resistant to
-          chipping but also biocompatible, providing long-lasting comfort and safety.
+          color gradients of natural teeth, ensuring a seamless integration with the patient's
+          smile. The use of Sagemax zirconia ensures that our crowns are not only strong and
+          resistant to chipping but also biocompatible, providing long-lasting comfort and safety.
         </p>
         <p>
           With MDent's expertise in dental restorations, you can trust that our layered zirconium
@@ -177,18 +185,19 @@ function CrownsPage() {
         cta={{ label: "Get in Touch", to: "/booking-form" }}
       >
         <p>
-          At MDent, we are committed to delivering the highest quality dental restorations using only
-          the best materials. That's why we exclusively use e.max, the leading lithium disilicate
-          material on the market, for our crowns. Known for its exceptional strength, durability, and
-          aesthetic appeal, e.max is the gold standard in modern dental restorations.
+          At MDent, we are committed to delivering the highest quality dental restorations using
+          only the best materials. That's why we exclusively use e.max, the leading lithium
+          disilicate material on the market, for our crowns. Known for its exceptional strength,
+          durability, and aesthetic appeal, e.max is the gold standard in modern dental
+          restorations.
         </p>
         <p>
           <strong className="text-navy">Layered e.max Crowns for Superior Aesthetics</strong> — For
-          anterior restorations and cases requiring the highest level of aesthetics, we offer layered
-          e.max crowns. These crowns are meticulously crafted by our skilled technicians to achieve a
-          natural translucency and lifelike appearance that blends seamlessly with the patient's
-          natural teeth. The layering technique allows for enhanced customization, making it possible
-          to match the unique shade and texture of each patient's smile.
+          anterior restorations and cases requiring the highest level of aesthetics, we offer
+          layered e.max crowns. These crowns are meticulously crafted by our skilled technicians to
+          achieve a natural translucency and lifelike appearance that blends seamlessly with the
+          patient's natural teeth. The layering technique allows for enhanced customization, making
+          it possible to match the unique shade and texture of each patient's smile.
         </p>
         <p>
           <strong className="text-navy">Solid e.max Crowns for Posterior Strength</strong> — For
@@ -254,8 +263,8 @@ function CrownsPage() {
         />
         <Reveal>
           <p className="measure mt-10 text-base leading-relaxed text-muted-foreground">
-            Opt for MDent's PFM crowns for a restoration that combines the strength of metal with the
-            beauty of porcelain, enhanced by 3D printing precision
+            Opt for MDent's PFM crowns for a restoration that combines the strength of metal with
+            the beauty of porcelain, enhanced by 3D printing precision
           </p>
         </Reveal>
       </Section>
@@ -285,7 +294,9 @@ function CrownsPage() {
 
       <Section className="pt-0">
         <Reveal>
-          <EyebrowHeading heading={<span className="text-2xl sm:text-3xl">Benefits of MDent Gold Crowns</span>} />
+          <EyebrowHeading
+            heading={<span className="text-2xl sm:text-3xl">Benefits of MDent Gold Crowns</span>}
+          />
         </Reveal>
         <NumberedBenefitList
           items={[

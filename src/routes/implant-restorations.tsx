@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Implant Restorations | MDent — Middle East Dental Laboratory";
-const description = "Screw-retained, cemented, Toronto bridge and bar over denture implant restorations from MDent Dubai.";
+const description =
+  "Screw-retained, cemented, Toronto bridge and bar over denture implant restorations from MDent Dubai.";
 
 export const Route = createFileRoute("/implant-restorations")({
   head: () => ({

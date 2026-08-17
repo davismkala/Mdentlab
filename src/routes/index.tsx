@@ -75,7 +75,11 @@ function Index() {
         </p>
         <p>
           Our services are a combination of the latest digital techniques, such as 3D printing and{" "}
-          <Link to="/digital-products" hash="cad" className="text-teal-soft underline underline-offset-4">
+          <Link
+            to="/digital-products"
+            hash="cad"
+            className="text-teal-soft underline underline-offset-4"
+          >
             CAD design
           </Link>
           , combined with over 30 years of dental laboratory craftsmanship in Dubai. You can sure

@@ -153,7 +153,11 @@ export function Header() {
       <div className="bg-navy/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8">
           <Link to="/" aria-label="MDent home">
-            <img src={SITE.logoWhite} alt="MDent — Middle East Dental Laboratory" className="h-9 w-auto lg:h-10" />
+            <img
+              src={SITE.logoWhite}
+              alt="MDent — Middle East Dental Laboratory"
+              className="h-9 w-auto lg:h-10"
+            />
           </Link>
           <div className="hidden items-center gap-4 lg:flex">
             <PlusLink to="/contact-us" variant="onDark" className="px-5 py-2.5 text-xs">
@@ -176,7 +180,10 @@ export function Header() {
       >
         <ul className="mx-auto flex max-w-7xl items-stretch gap-1 px-5 sm:px-8">
           {NAV.map((group) => (
-            <li key={group.label} onMouseEnter={() => setOpenGroup(group.children ? group.label : null)}>
+            <li
+              key={group.label}
+              onMouseEnter={() => setOpenGroup(group.children ? group.label : null)}
+            >
               {group.to ? (
                 <Link
                   {...splitTo(group.to)}

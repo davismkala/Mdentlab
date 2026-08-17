@@ -74,9 +74,12 @@ function PostPage() {
       </PageHero>
       <Section>
         <article className="prose-mdent text-base text-muted-foreground">
-          {(data.body ?? "").split("\n").filter(Boolean).map((para, i) => (
-            <p key={i}>{para}</p>
-          ))}
+          {(data.body ?? "")
+            .split("\n")
+            .filter(Boolean)
+            .map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
         </article>
         <div className="mt-10">
           <PlusLink to="/mdent-news" variant="outline">

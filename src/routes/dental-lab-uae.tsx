@@ -66,8 +66,8 @@ function Page() {
         <p>
           Running a busy dental practice in the UAE means you cannot afford delays, remakes, or
           inconsistent fit. That is why hundreds of UAE clinics choose MDent as their dental lab
-          partner. Our Dubai laboratory is fully equipped with the latest CAD/CAM milling systems, 3D
-          printers, and digital impression workflows compatible with{" "}
+          partner. Our Dubai laboratory is fully equipped with the latest CAD/CAM milling systems,
+          3D printers, and digital impression workflows compatible with{" "}
           <a
             href="https://www.itero.com"
             target="_blank"
@@ -94,8 +94,8 @@ function Page() {
           deliver restorations that fit right the first time.
         </p>
         <p>
-          MDent is also a certified Inman Aligner lab, offering UAE clinics access to a broader range
-          of orthodontic and cosmetic solutions without juggling multiple suppliers.
+          MDent is also a certified Inman Aligner lab, offering UAE clinics access to a broader
+          range of orthodontic and cosmetic solutions without juggling multiple suppliers.
         </p>
       </ImageTextSection>
 

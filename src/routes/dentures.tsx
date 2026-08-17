@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Dentures | MDent — Middle East Dental Laboratory";
-const description = "Acrylic, flexible and chrome RPD dentures crafted by MDent in Dubai for exceptional fit and comfort.";
+const description =
+  "Acrylic, flexible and chrome RPD dentures crafted by MDent in Dubai for exceptional fit and comfort.";
 
 export const Route = createFileRoute("/dentures")({
   head: () => ({

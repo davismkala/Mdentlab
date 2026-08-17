@@ -36,7 +36,7 @@ export function EyebrowHeading({
   className?: string | undefined;
   level?: 1 | 2 | 3 | undefined;
 }) {
-  const Tag = (`h${level}` as const) satisfies "h1" | "h2" | "h3";
+  const Tag = `h${level}` as const satisfies "h1" | "h2" | "h3";
   return (
     <div className={cn("space-y-4", className)}>
       {eyebrow ? <Eyebrow onDark={onDark}>{eyebrow}</Eyebrow> : null}

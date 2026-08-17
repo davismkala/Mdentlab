@@ -97,7 +97,9 @@ export function NewsSection() {
       </div>
       <div className="mt-14 grid gap-10 md:grid-cols-3">
         {isLoading
-          ? [0, 1, 2].map((i) => <div key={i} className="aspect-4/3 w-full animate-pulse bg-sand" />)
+          ? [0, 1, 2].map((i) => (
+              <div key={i} className="aspect-4/3 w-full animate-pulse bg-sand" />
+            ))
           : (data ?? []).map((post, i) => <NewsCard key={post.id} post={post} delay={i * 80} />)}
       </div>
     </Section>

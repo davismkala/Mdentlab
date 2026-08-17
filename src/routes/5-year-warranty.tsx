@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "5 Year Warranty | MDent — Middle East Dental Laboratory";
-const description = "MDent's five year warranty on dental restorations for clinics across the UAE and GCC.";
+const description =
+  "MDent's five year warranty on dental restorations for clinics across the UAE and GCC.";
 
 export const Route = createFileRoute("/5-year-warranty")({
   head: () => ({

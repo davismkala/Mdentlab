@@ -18,8 +18,7 @@ const base =
 
 const variants: Record<Variant, string> = {
   solid: "bg-teal px-6 py-3.5 text-navy-foreground hover:bg-navy",
-  outline:
-    "border border-navy/25 px-6 py-3.5 text-navy hover:border-teal hover:text-teal",
+  outline: "border border-navy/25 px-6 py-3.5 text-navy hover:border-teal hover:text-teal",
   onDark:
     "border border-navy-foreground/30 px-6 py-3.5 text-navy-foreground hover:border-teal hover:bg-teal",
   ghost: "text-teal hover:text-navy",
@@ -51,10 +50,7 @@ export function PlusButton({
   ...props
 }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: Variant }) {
   return (
-    <button
-      {...props}
-      className={cn(base, variants[variant], "disabled:opacity-60", className)}
-    >
+    <button {...props} className={cn(base, variants[variant], "disabled:opacity-60", className)}>
       <span aria-hidden="true">+</span>
       <span>{children}</span>
     </button>

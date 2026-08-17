@@ -50,18 +50,17 @@ function BookingPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   function set(key: keyof typeof values) {
-    return (
-      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
-    ) => setValues((v) => ({ ...v, [key]: e.target.value }));
+    return (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
+      setValues((v) => ({ ...v, [key]: e.target.value }));
   }
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     const next: Record<string, string> = {};
-    if (!values.full_name.trim()) next['full_name'] = "Please enter your full name.";
+    if (!values.full_name.trim()) next["full_name"] = "Please enter your full name.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(values.email.trim()))
-      next['email'] = "Please enter a valid email address.";
-    if (!values.phone.trim()) next['phone'] = "Please enter a phone number so we can reach you.";
+      next["email"] = "Please enter a valid email address.";
+    if (!values.phone.trim()) next["phone"] = "Please enter a phone number so we can reach you.";
     setErrors(next);
     if (Object.keys(next).length) return;
 
@@ -115,16 +114,20 @@ function BookingPage() {
             />
           ) : null}
           <div className="grid gap-6 sm:grid-cols-2">
-            <Field label="Full Name" name="full_name" required error={errors['full_name']}>
+            <Field label="Full Name" name="full_name" required error={errors["full_name"]}>
               <TextInput id="full_name" value={values.full_name} onChange={set("full_name")} />
             </Field>
             <Field label="Clinic Name" name="clinic_name">
-              <TextInput id="clinic_name" value={values.clinic_name} onChange={set("clinic_name")} />
+              <TextInput
+                id="clinic_name"
+                value={values.clinic_name}
+                onChange={set("clinic_name")}
+              />
             </Field>
-            <Field label="Email" name="email" required error={errors['email']}>
+            <Field label="Email" name="email" required error={errors["email"]}>
               <TextInput id="email" type="email" value={values.email} onChange={set("email")} />
             </Field>
-            <Field label="Phone" name="phone" required error={errors['phone']}>
+            <Field label="Phone" name="phone" required error={errors["phone"]}>
               <TextInput id="phone" value={values.phone} onChange={set("phone")} />
             </Field>
             <Field label="Country" name="country">

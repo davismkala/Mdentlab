@@ -50,11 +50,11 @@ function ContactPage() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     const next: Errors = {};
-    if (!values.full_name.trim()) next['full_name'] = "Please enter your full name.";
+    if (!values.full_name.trim()) next["full_name"] = "Please enter your full name.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(values.email.trim()))
-      next['email'] = "Please enter a valid email address.";
+      next["email"] = "Please enter a valid email address.";
     if (values.message.trim().length < 10)
-      next['message'] = "Please tell us a little more (at least 10 characters).";
+      next["message"] = "Please tell us a little more (at least 10 characters).";
     setErrors(next);
     if (Object.keys(next).length) return;
 
@@ -136,13 +136,17 @@ function ContactPage() {
               />
             ) : null}
             <div className="grid gap-6 sm:grid-cols-2">
-              <Field label="Full Name" name="full_name" required error={errors['full_name']}>
+              <Field label="Full Name" name="full_name" required error={errors["full_name"]}>
                 <TextInput id="full_name" value={values.full_name} onChange={set("full_name")} />
               </Field>
               <Field label="Clinic Name" name="clinic_name">
-                <TextInput id="clinic_name" value={values.clinic_name} onChange={set("clinic_name")} />
+                <TextInput
+                  id="clinic_name"
+                  value={values.clinic_name}
+                  onChange={set("clinic_name")}
+                />
               </Field>
-              <Field label="Email" name="email" required error={errors['email']}>
+              <Field label="Email" name="email" required error={errors["email"]}>
                 <TextInput id="email" type="email" value={values.email} onChange={set("email")} />
               </Field>
               <Field label="Phone" name="phone">
@@ -155,7 +159,7 @@ function ContactPage() {
                 <TextInput id="subject" value={values.subject} onChange={set("subject")} />
               </Field>
             </div>
-            <Field label="Message" name="message" required error={errors['message']}>
+            <Field label="Message" name="message" required error={errors["message"]}>
               <TextArea id="message" value={values.message} onChange={set("message")} />
             </Field>
             <PlusButton type="submit" disabled={status === "loading"}>

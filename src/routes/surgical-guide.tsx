@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Surgical Guide | MDent — Middle East Dental Laboratory";
-const description = "3D printed implant surgical guides from MDent, the leading dental lab in Dubai.";
+const description =
+  "3D printed implant surgical guides from MDent, the leading dental lab in Dubai.";
 
 export const Route = createFileRoute("/surgical-guide")({
   head: () => ({

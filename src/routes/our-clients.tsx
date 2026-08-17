@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Our Clients | MDent — Middle East Dental Laboratory";
-const description = "Dental clinics across the UAE, GCC and worldwide trust MDent for their restorations.";
+const description =
+  "Dental clinics across the UAE, GCC and worldwide trust MDent for their restorations.";
 
 export const Route = createFileRoute("/our-clients")({
   head: () => ({

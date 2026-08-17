@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "ClearSmile Aligners | MDent — Middle East Dental Laboratory";
-const description = "ClearSmile clear aligners produced by MDent for dental clinics in the UAE and GCC.";
+const description =
+  "ClearSmile clear aligners produced by MDent for dental clinics in the UAE and GCC.";
 
 export const Route = createFileRoute("/clearsmile-aligners")({
   head: () => ({

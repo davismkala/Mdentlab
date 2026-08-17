@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Night Guards | MDent — Middle East Dental Laboratory";
-const description = "Custom night guards for bruxism, produced by MDent Dubai for clinics across the UAE.";
+const description =
+  "Custom night guards for bruxism, produced by MDent Dubai for clinics across the UAE.";
 
 export const Route = createFileRoute("/night-guards")({
   head: () => ({

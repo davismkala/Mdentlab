@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContentComing } from "@/components/mdent/ContentComing";
 
 const title = "Inlay/Onlay | MDent — Middle East Dental Laboratory";
-const description = "Precision inlays and onlays produced by MDent, the leading dental laboratory in Dubai.";
+const description =
+  "Precision inlays and onlays produced by MDent, the leading dental laboratory in Dubai.";
 
 export const Route = createFileRoute("/inlay-onlay")({
   head: () => ({

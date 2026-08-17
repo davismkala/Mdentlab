@@ -43,13 +43,7 @@ export function SelectInput(props: React.SelectHTMLAttributes<HTMLSelectElement>
   return <select {...props} className={cn(control, props.className)} />;
 }
 
-export function FormStatus({
-  state,
-  message,
-}: {
-  state: "error" | "success";
-  message: string;
-}) {
+export function FormStatus({ state, message }: { state: "error" | "success"; message: string }) {
   return (
     <div
       role="status"
