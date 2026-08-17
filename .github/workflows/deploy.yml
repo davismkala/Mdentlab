@@ -33,6 +33,20 @@ jobs:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
 
+      - name: Register workers.dev subdomain (idempotent, one-time)
+        # The account has no workers.dev subdomain yet, so the deploy step
+        # below fails with "Required Worker name missing" / prompts that
+        # can't be answered non-interactively. Claiming it via the API is
+        # a no-op once it already exists, so this is safe to leave in place.
+        run: |
+          curl -sS -X PUT "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CLOUDFLARE_ACCOUNT_ID }}/workers/subdomain" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"subdomain":"mdentlab"}' | tee /tmp/subdomain-response.json
+          echo
+          grep -q '"success":true' /tmp/subdomain-response.json || echo "::warning::Subdomain registration did not report success — check the response above."
+        continue-on-error: true
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
