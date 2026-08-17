@@ -5,6 +5,7 @@ import { PageHero } from "@/components/mdent/Hero";
 import { Section } from "@/components/mdent/Sections";
 import { PlusButton } from "@/components/mdent/PlusLink";
 import { Field, FormStatus, TextArea, TextInput } from "@/components/mdent/FormField";
+import { IMAGES } from "@/lib/site";
 
 const title = "Careers at MDent | Middle East Dental Laboratory, Dubai";
 const description =
@@ -18,10 +19,12 @@ export const Route = createFileRoute("/careers")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/careers" },
+      { property: "og:url", content: "https://mdentlab.com/careers" },
+      { property: "og:image", content: IMAGES.technicians },
+      { name: "twitter:image", content: IMAGES.technicians },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/careers" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/careers" }],
   }),
   component: CareersPage,
 });

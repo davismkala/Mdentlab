@@ -15,10 +15,20 @@ export const Route = createFileRoute("/dentures")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/dentures" },
+      { property: "og:url", content: "https://mdentlab.com/dentures" },
+      {
+        property: "og:image",
+        content:
+          "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/dentures.jpg?w=1200&ssl=1",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/dentures.jpg?w=1200&ssl=1",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/dentures" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/dentures" }],
   }),
   component: Page,
 });
