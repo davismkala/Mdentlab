@@ -7,7 +7,7 @@ import { PlusButton } from "@/components/mdent/PlusLink";
 import { Field, FormStatus, TextArea, TextInput } from "@/components/mdent/FormField";
 import { SITE, IMAGES } from "@/lib/site";
 
-const title = "Contact Us | MDent — Middle East Dental Laboratory, Dubai";
+const title = "Contact Us | MDent: Middle East Dental Laboratory, Dubai";
 const description =
   "Contact MDent, the leading dental lab in Dubai. Call +971 4 332 9201, email info@mdentlab.com or send us a message and our team will respond promptly.";
 
@@ -126,7 +126,7 @@ function ContactPage() {
             {status === "success" ? (
               <FormStatus
                 state="success"
-                message="Thank you — your message has been sent. Our team will be in touch shortly."
+                message="Thanks! Your message has been sent. Our team will be in touch shortly."
               />
             ) : null}
             {status === "error" ? (

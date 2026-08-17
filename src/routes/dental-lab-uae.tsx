@@ -35,13 +35,13 @@ function Page() {
         className="pt-40"
         image={IMAGES.technicians}
         alt="Dental Lab UAE - Middle East Dental Laboratory technicians at work"
-        heading="Dental Lab UAE — Precision Restorations for Clinics Across the Emirates"
+        heading="Dental Lab UAE: Precision Restorations for Clinics Across the Emirates"
         headingLevel={1}
         cta={{ label: "More About Us", to: "/about-us" }}
       >
         <p>
           MDent is the dental lab UAE clinics have trusted since 1995. Headquartered on Sheikh Zayed
-          Road in Dubai, our laboratory serves dental practices across all seven Emirates — Dubai,
+          Road in Dubai, our laboratory serves dental practices across all seven Emirates: Dubai,
           Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain.
         </p>
         <p>
@@ -85,7 +85,7 @@ function Page() {
           >
             3Shape
           </a>
-          , Sirona, and Medit scanners — so onboarding your clinic is seamless.
+          , Sirona, and Medit scanners, so onboarding your clinic is seamless.
         </p>
         <p>
           We have spent over 30 years mastering the specific demands of the UAE dental market. From
@@ -110,8 +110,8 @@ function Page() {
         cta={{ label: "More About Us", to: "/about-us" }}
       >
         <p>
-          Our three decades of experience in the UAE dental industry means we have seen — and solved
-          — virtually every restoration challenge. We work with clinics of all sizes, from
+          Our three decades of experience in the UAE dental industry means we have seen, and solved,
+          virtually every restoration challenge. We work with clinics of all sizes, from
           single-chair practices to large multi-branch groups, providing the same level of care and
           craftsmanship regardless of order volume.
         </p>

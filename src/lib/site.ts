@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "MDent — Middle East Dental Laboratory",
+  name: "MDent: Middle East Dental Laboratory",
   shortName: "MDent",
   address: "White Crown Tower, Office 1901 Sheikh Zayed Road",
   email: "info@mdentlab.com",

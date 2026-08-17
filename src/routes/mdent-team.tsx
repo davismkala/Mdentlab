@@ -5,7 +5,7 @@ import { EyebrowHeading } from "@/components/mdent/Eyebrow";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "MDent Team | MDent — Middle East Dental Laboratory";
+const title = "MDent Team | MDent: Middle East Dental Laboratory";
 const description =
   "Meet the dental technicians and specialists behind Middle East Dental Laboratory.";
 
@@ -58,8 +58,8 @@ function Page() {
       <PageHero eyebrow="People" title="MDent Team" image={IMAGES.technicians}>
         <p>
           Behind every case is a team of certified dental technicians, CAD/CAM designers and
-          specialists — organised by discipline so your case gets the attention of someone who works
-          on exactly that kind of restoration every day.
+          specialists, organised by discipline. Your case gets the attention of someone who works on
+          exactly that kind of restoration every day.
         </p>
       </PageHero>
 

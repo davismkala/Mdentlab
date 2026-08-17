@@ -109,7 +109,7 @@ function CareersPage() {
           {status === "success" ? (
             <FormStatus
               state="success"
-              message="Thank you — your application has been received. We will be in touch if there is a suitable role."
+              message="Thanks! Your application has been received. We'll be in touch if there's a suitable role."
             />
           ) : null}
           {status === "error" ? (
@@ -138,7 +138,7 @@ function CareersPage() {
                 onChange={set("years_experience")}
               />
             </Field>
-            <Field label="CV (PDF, DOC, DOCX — max 5MB)" name="cv" error={errors["cv"]}>
+            <Field label="CV (PDF, DOC, DOCX, max 5MB)" name="cv" error={errors["cv"]}>
               <input
                 id="cv"
                 ref={fileRef}

@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Sleep Apnea Appliance | MDent — Middle East Dental Laboratory";
+const title = "Sleep Apnea Appliance | MDent: Middle East Dental Laboratory";
 const description = "Custom sleep apnea appliances manufactured by MDent in Dubai.";
 
 export const Route = createFileRoute("/sleep-apnea-appliance")({
@@ -29,8 +29,8 @@ function Page() {
       <PageHero title="Sleep Apnea Appliance" image={IMAGES.technicians}>
         <p>
           For patients with mild to moderate obstructive sleep apnea or snoring who aren't
-          candidates for — or don't tolerate — CPAP therapy, a custom mandibular advancement device
-          can be a well-tolerated alternative. MDent fabricates these appliances to your
+          candidates for CPAP therapy, or simply can't tolerate it, a custom mandibular advancement
+          device can be a well-tolerated alternative. MDent fabricates these appliances to your
           prescription from precise impressions or scans and a recorded bite in the advanced
           position.
         </p>

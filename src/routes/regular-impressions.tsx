@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Regular Impressions | MDent — Middle East Dental Laboratory";
+const title = "Regular Impressions | MDent: Middle East Dental Laboratory";
 const description = "How to send conventional impressions to MDent's dental laboratory in Dubai.";
 
 export const Route = createFileRoute("/regular-impressions")({
@@ -28,7 +28,7 @@ function Page() {
     <>
       <PageHero title="Regular Impressions" image={IMAGES.technicians}>
         <p>
-          Not every clinic has gone fully digital, and not every case calls for it — MDent accepts
+          Not every clinic has gone fully digital, and not every case calls for it. MDent accepts
           conventional PVS and alginate impressions from clinics across the UAE and GCC, with the
           same attention to accuracy at every step from pour to model to finished restoration.
         </p>
@@ -48,7 +48,7 @@ function Page() {
             },
             {
               lead: "Reliable Courier Pickup:",
-              text: "Coordinate a pickup for your case, or drop it with our courier partners — either way, it's tracked from your clinic to our lab.",
+              text: "Coordinate a pickup for your case, or drop it with our courier partners. Either way, it's tracked from your clinic to our lab.",
             },
             {
               lead: "Clear Case Documentation:",

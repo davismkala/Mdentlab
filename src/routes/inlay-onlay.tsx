@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Inlay/Onlay | MDent — Middle East Dental Laboratory";
+const title = "Inlay/Onlay | MDent: Middle East Dental Laboratory";
 const description =
   "Precision inlays and onlays produced by MDent, the leading dental laboratory in Dubai.";
 

@@ -104,7 +104,7 @@ function BookingPage() {
           {status === "success" ? (
             <FormStatus
               state="success"
-              message="Thank you — your request has been received. A member of the MDent team will contact you shortly."
+              message="Thanks! Your request has been received. A member of the MDent team will contact you shortly."
             />
           ) : null}
           {status === "error" ? (

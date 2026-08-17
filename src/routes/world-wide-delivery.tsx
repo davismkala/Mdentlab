@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "World Wide Delivery | MDent — Middle East Dental Laboratory";
+const title = "World Wide Delivery | MDent: Middle East Dental Laboratory";
 const description =
   "MDent ships precision dental restorations worldwide with fast, tracked logistics.";
 
@@ -29,7 +29,7 @@ function Page() {
     <>
       <PageHero title="World Wide Delivery" image={IMAGES.closing}>
         <p>
-          MDent's Dubai laboratory serves clinics well beyond the UAE — including a growing base of
+          MDent's Dubai laboratory serves clinics well beyond the UAE, including a growing base of
           dental practices across East Africa and the wider GCC. Every case is packed and shipped
           with tracked, reliable logistics so it arrives on schedule, wherever your clinic is.
         </p>

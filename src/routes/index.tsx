@@ -5,7 +5,7 @@ import { ProductsSection } from "@/components/mdent/ProductCard";
 import { NewsSection } from "@/components/mdent/NewsSection";
 import { IMAGES } from "@/lib/site";
 
-const title = "Dental Lab Dubai | MDent — Middle East Dental Laboratory Since 1995";
+const title = "Dental Lab Dubai | MDent: Middle East Dental Laboratory Since 1995";
 const description =
   "MDent is the leading dental lab in Dubai since 1995. Crowns, veneers, implant restorations, dentures and digital dentistry for clinics across the UAE and GCC.";
 
@@ -51,7 +51,7 @@ function Index() {
         <p>
           MDent is the leading dental lab Dubai, trusted by clinics across the UAE since 1995.
           Located on Sheikh Zayed Road, our team of highly qualified dental technicians specialises
-          in crowns, veneers, implants, dentures, and digital dental solutions — combining 30 years
+          in crowns, veneers, implants, dentures, and digital dental solutions, combining 30 years
           of craftsmanship with CAD/CAM and 3D printing technology.
         </p>
       </ImageTextSection>
@@ -99,8 +99,8 @@ function Index() {
         cta={{ label: "More About Us", to: "/about-us" }}
       >
         <p>
-          Our three decades of experience in the UAE dental industry means we have seen — and solved
-          — virtually every restoration challenge. We work with clinics of all sizes, from
+          Our three decades of experience in the UAE dental industry means we have seen, and solved,
+          virtually every restoration challenge. We work with clinics of all sizes, from
           single-chair practices to large multi-branch groups, providing the same level of care and
           craftsmanship regardless of order volume.
         </p>

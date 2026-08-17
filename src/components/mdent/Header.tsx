@@ -155,7 +155,7 @@ export function Header() {
           <Link to="/" aria-label="MDent home">
             <img
               src={SITE.logoWhite}
-              alt="MDent — Middle East Dental Laboratory"
+              alt="MDent: Middle East Dental Laboratory"
               className="h-9 w-auto lg:h-10"
             />
           </Link>

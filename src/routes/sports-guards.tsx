@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Sports Guards | MDent — Middle East Dental Laboratory";
+const title = "Sports Guards | MDent: Middle East Dental Laboratory";
 const description =
   "Custom-fitted sports mouth guards from MDent, Dubai's leading dental laboratory.";
 
@@ -45,7 +45,7 @@ function Page() {
           items={[
             {
               lead: "Custom Fit for Real-World Wear:",
-              text: "A guard that fits precisely gets worn — one that's bulky or loose doesn't, no matter how protective it is on paper.",
+              text: "A guard that fits precisely gets worn. One that's bulky or loose doesn't, no matter how protective it is on paper.",
             },
             {
               lead: "Colours and Branding on Request:",
