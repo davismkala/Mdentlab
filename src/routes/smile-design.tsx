@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Smile Design | MDent — Middle East Dental Laboratory";
+const title = "Smile Design | MDent: Middle East Dental Laboratory";
 const description = "Digital smile design services for dental clinics from MDent Dubai.";
 
 export const Route = createFileRoute("/smile-design")({
@@ -29,7 +29,7 @@ function Page() {
       <PageHero title="Smile Design" image={IMAGES.technicians}>
         <p>
           For full smile makeover cases, MDent's digital smile design service lets you show your
-          patient the planned outcome before a single tooth is prepared — building confidence in the
+          patient the planned outcome before a single tooth is prepared, building confidence in the
           treatment plan and giving our ceramics team a clear target to design toward.
         </p>
         <div className="mt-8">

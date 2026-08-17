@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Inman Aligner | MDent — Middle East Dental Laboratory";
+const title = "Inman Aligner | MDent: Middle East Dental Laboratory";
 const description =
   "MDent is a certified Inman Aligner laboratory serving clinics across the UAE and GCC.";
 
@@ -39,8 +39,8 @@ function Page() {
             Inman Aligner
           </a>{" "}
           laboratory, giving UAE clinics access to a removable appliance built specifically for fast
-          anterior alignment — often in a matter of weeks rather than the months a traditional
-          appliance can take.
+          anterior alignment. Cases often finish in weeks, not the months a traditional appliance
+          can take.
         </p>
         <div className="mt-8">
           <PlusLink to="/booking-form" variant="solid">

@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "5 Year Warranty | MDent — Middle East Dental Laboratory";
+const title = "5 Year Warranty | MDent: Middle East Dental Laboratory";
 const description =
   "MDent's five year warranty on dental restorations for clinics across the UAE and GCC.";
 
@@ -30,8 +30,8 @@ function Page() {
       <PageHero eyebrow="Get Started" title="5 Year Warranty" image={IMAGES.crownsHero}>
         <p>
           Every restoration produced by MDent is backed by a five-year warranty against
-          manufacturing defects — our confidence in the materials and craftsmanship behind every
-          case we produce.
+          manufacturing defects. That's how confident we are in the materials and craftsmanship
+          behind every case we produce.
         </p>
         <div className="mt-8">
           <PlusLink to="/contact-us" variant="solid">
@@ -53,7 +53,7 @@ function Page() {
             },
             {
               lead: "How to Make a Claim:",
-              text: "Contact our team with the case reference, a description of the issue, and photographs where possible — we'll advise on next steps.",
+              text: "Contact our team with the case reference, a description of the issue, and photographs where possible. We'll advise on next steps.",
             },
             {
               lead: "What Isn't Covered:",

@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Night Guards | MDent — Middle East Dental Laboratory";
+const title = "Night Guards | MDent: Middle East Dental Laboratory";
 const description =
   "Custom night guards for bruxism, produced by MDent Dubai for clinics across the UAE.";
 
@@ -30,7 +30,7 @@ function Page() {
       <PageHero title="Night Guards" image={IMAGES.technicians}>
         <p>
           Bruxism wears down teeth and restorations faster than almost anything else in daily
-          practice. MDent fabricates custom night guards — hard, soft, or dual-laminate — designed
+          practice. MDent fabricates custom night guards in hard, soft, or dual-laminate, designed
           to protect your patients' dentition and any existing restorative work while they sleep.
         </p>
         <div className="mt-8">
@@ -49,7 +49,7 @@ function Page() {
             },
             {
               lead: "Material Matched to the Case:",
-              text: "Hard acrylic for heavy bruxers, soft or dual-laminate for lighter clenching — we fabricate to your prescription.",
+              text: "Hard acrylic for heavy bruxers, soft or dual-laminate for lighter clenching. We fabricate to your exact prescription.",
             },
             {
               lead: "Protects Restorative Investment:",

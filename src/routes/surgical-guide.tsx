@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Surgical Guide | MDent — Middle East Dental Laboratory";
+const title = "Surgical Guide | MDent: Middle East Dental Laboratory";
 const description =
   "3D printed implant surgical guides from MDent, the leading dental lab in Dubai.";
 
@@ -53,7 +53,7 @@ function Page() {
             },
             {
               lead: "Works with Your Existing Data:",
-              text: "Send us your CBCT (DICOM) and intraoral scan files — we handle the merge and guide design from there.",
+              text: "Send us your CBCT (DICOM) and intraoral scan files, and we'll handle the merge and guide design from there.",
             },
             {
               lead: "Supports Predictable, Efficient Surgery:",

@@ -4,7 +4,7 @@ import { ImageTextSection, Section } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Orthodontics | MDent — Middle East Dental Laboratory";
+const title = "Orthodontics | MDent: Middle East Dental Laboratory";
 const description =
   "Fixed and removable orthodontic appliances and retainers produced by MDent Dubai.";
 
@@ -30,7 +30,7 @@ function Page() {
       <PageHero title="Orthodontics" image={IMAGES.technicians}>
         <p>
           MDent produces fixed and removable orthodontic appliances and retainers for clinics across
-          the UAE and GCC — precise, well-fitted work built to your prescription, whether the case
+          the UAE and GCC: precise, well-fitted work built to your prescription, whether the case
           calls for a traditional appliance or a clear alternative.
         </p>
         <div className="mt-8">
@@ -62,8 +62,8 @@ function Page() {
         cta={{ label: "Get in Touch", to: "/booking-form" }}
       >
         <p>
-          Removable appliances — including expansion plates and functional appliances — are built
-          for a snug, comfortable fit that supports patient compliance, which is often the deciding
+          Removable appliances, including expansion plates and functional appliances, are built for
+          a snug, comfortable fit that supports patient compliance, which is often the deciding
           factor in case success.
         </p>
       </ImageTextSection>
@@ -76,7 +76,7 @@ function Page() {
       >
         <p>
           Hawley, essix and bonded retainers, fabricated to hold post-treatment results in place.
-          Precise fit matters here more than almost anywhere else in orthodontics — a loose retainer
+          Precise fit matters here more than almost anywhere else in orthodontics: a loose retainer
           is a relapse waiting to happen.
         </p>
       </ImageTextSection>

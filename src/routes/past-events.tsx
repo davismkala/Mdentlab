@@ -5,7 +5,7 @@ import { SocialIcons } from "@/components/mdent/SocialIcons";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Past Events | MDent — Middle East Dental Laboratory";
+const title = "Past Events | MDent: Middle East Dental Laboratory";
 const description = "A look back at CME courses and dental events hosted by MDent in Dubai.";
 
 export const Route = createFileRoute("/past-events")({

@@ -81,11 +81,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MDent — Middle East Dental Laboratory | Dental Lab Dubai" },
+      { title: "MDent: Middle East Dental Laboratory | Dental Lab Dubai" },
       {
         name: "description",
         content:
-          "MDent is the leading dental lab in Dubai since 1995 — crowns, veneers, implant restorations, dentures and digital dentistry for clinics across the GCC.",
+          "MDent is the leading dental lab in Dubai since 1995. We craft crowns, veneers, implant restorations, dentures and digital dentistry for clinics across the GCC.",
       },
       { name: "author", content: "Middle East Dental Laboratory" },
       { property: "og:site_name", content: "Middle East Dental Laboratory" },

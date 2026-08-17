@@ -28,7 +28,7 @@ export const Route = createFileRoute("/mdent-news/$slug")({
       { title: "MDent News | Middle East Dental Laboratory" },
       {
         name: "description",
-        content: "An article from MDent — Middle East Dental Laboratory, Dubai.",
+        content: "An article from MDent: Middle East Dental Laboratory, Dubai.",
       },
       { property: "og:type", content: "article" },
       { property: "og:url", content: `/mdent-news/${params.slug}` },

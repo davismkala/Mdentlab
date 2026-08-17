@@ -6,7 +6,7 @@ import { NewsCard, latestPostsQuery } from "@/components/mdent/NewsSection";
 
 const title = "MDent News | Dental Lab Insights from Middle East Dental Laboratory";
 const description =
-  "News, digital dentistry insights and laboratory updates from MDent — Middle East Dental Laboratory in Dubai.";
+  "News, digital dentistry insights and laboratory updates from MDent: Middle East Dental Laboratory in Dubai.";
 
 export const Route = createFileRoute("/mdent-news/")({
   head: () => ({

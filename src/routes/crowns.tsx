@@ -13,7 +13,7 @@ import { IMAGES } from "@/lib/site";
 
 const title = "Dental Crowns Dubai | Zirconia, E.Max, PFM & Gold Crowns | MDent";
 const description =
-  "MDent crafts layered zirconium, zircon solid multi-layered, lithium disilicate (E.Max), PFM and gold crowns in Dubai — precision fit, strength and natural aesthetics.";
+  "MDent crafts layered zirconium, zircon solid multi-layered, lithium disilicate (E.Max), PFM and gold crowns in Dubai for a precision fit, real strength and natural aesthetics.";
 
 export const Route = createFileRoute("/crowns")({
   head: () => ({
@@ -192,7 +192,7 @@ function CrownsPage() {
           restorations.
         </p>
         <p>
-          <strong className="text-navy">Layered e.max Crowns for Superior Aesthetics</strong> — For
+          <strong className="text-navy">Layered e.max Crowns for Superior Aesthetics:</strong> For
           anterior restorations and cases requiring the highest level of aesthetics, we offer
           layered e.max crowns. These crowns are meticulously crafted by our skilled technicians to
           achieve a natural translucency and lifelike appearance that blends seamlessly with the
@@ -200,7 +200,7 @@ function CrownsPage() {
           it possible to match the unique shade and texture of each patient's smile.
         </p>
         <p>
-          <strong className="text-navy">Solid e.max Crowns for Posterior Strength</strong> — For
+          <strong className="text-navy">Solid e.max Crowns for Posterior Strength:</strong> For
           posterior restorations where strength and durability are paramount, we provide solid e.max
           crowns. These crowns offer the same outstanding aesthetic qualities as layered crowns but
           are designed to withstand the higher biting forces typical in the posterior region. Solid

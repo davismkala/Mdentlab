@@ -4,7 +4,7 @@ import { ImageTextSection, Section, NumberedBenefitList } from "@/components/mde
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Implant Restorations | MDent — Middle East Dental Laboratory";
+const title = "Implant Restorations | MDent: Middle East Dental Laboratory";
 const description =
   "Screw-retained, cemented, Toronto bridge and bar over denture implant restorations from MDent Dubai.";
 
@@ -29,10 +29,9 @@ function Page() {
     <>
       <PageHero title="Implant Restorations">
         <p>
-          Implant work leaves little room for error — a restoration that is off by even a fraction
-          of a millimetre means a remake, a delay, and an unhappy patient. MDent's implant
-          restorations are designed and milled to fit precisely to your case, across every major
-          implant system.
+          Implant work leaves little room for error. A restoration that is off by even a fraction of
+          a millimetre means a remake, a delay, and an unhappy patient. MDent's implant restorations
+          are designed and milled to fit precisely to your case, across every major implant system.
         </p>
         <div className="mt-8">
           <PlusLink to="/booking-form" variant="solid">
@@ -51,7 +50,7 @@ function Page() {
       >
         <p>
           Screw-retained crowns and bridges give your patients a restoration that is fully
-          retrievable — essential for cases where future maintenance, hygiene access, or adjustment
+          retrievable, essential for cases where future maintenance, hygiene access, or adjustment
           is a priority. We design each restoration around your implant system's exact screw channel
           and torque specifications for a predictable, passive fit at seating.
         </p>
@@ -67,7 +66,7 @@ function Page() {
         alt="Cemented implant restoration by MDent"
       >
         <p>
-          For cases where a screw-access channel isn't practical — often in the aesthetic zone —
+          For cases where a screw-access channel isn't practical, often in the aesthetic zone,
           cemented restorations on custom or stock abutments give you full control over emergence
           profile and shade, with the natural, unbroken occlusal surface patients prefer.
         </p>
@@ -78,7 +77,7 @@ function Page() {
           items={[
             {
               lead: "Every Major Implant System:",
-              text: "We work to the library files and specifications of the leading implant systems used across UAE and GCC clinics — send us your system and connection type and we'll take it from there.",
+              text: "We work to the library files and specifications of the leading implant systems used across UAE and GCC clinics. Send us your system and connection type and we'll take it from there.",
             },
             {
               lead: "Passive, Verified Fit:",
@@ -86,7 +85,7 @@ function Page() {
             },
             {
               lead: "Digital or Conventional Workflow:",
-              text: "Send an intraoral scan or a physical implant-level impression — either way, the case is designed and milled to the same standard.",
+              text: "Send an intraoral scan or a physical implant-level impression. Either way, the case is designed and milled to the same standard.",
             },
           ]}
         />

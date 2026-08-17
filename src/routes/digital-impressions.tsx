@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Digital Impressions | MDent — Middle East Dental Laboratory";
+const title = "Digital Impressions | MDent: Middle East Dental Laboratory";
 const description =
   "How to send digital impressions to MDent from iTero, 3Shape, Sirona and Medit scanners.";
 
@@ -47,7 +47,7 @@ function Page() {
           >
             3Shape
           </a>
-          , Sirona and Medit scanners — no impression trays, no shipping delays, and one less
+          , Sirona and Medit scanners. No impression trays, no shipping delays, and one less
           variable between your prep and the finished restoration.
         </p>
         <div className="mt-8">
@@ -62,7 +62,7 @@ function Page() {
           items={[
             {
               lead: "Send the Scan Directly:",
-              text: "Export from your scanner's software and send the case straight to our lab — no physical shipment required.",
+              text: "Export from your scanner's software and send the case straight to our lab. No physical shipment required.",
             },
             {
               lead: "Faster Turnaround:",
@@ -74,7 +74,7 @@ function Page() {
             },
             {
               lead: "One Workflow for Everything:",
-              text: "The same scan drives CAD design, model printing and the finished restoration — see our Digital Products page for the full workflow.",
+              text: "The same scan drives CAD design, model printing and the finished restoration. See our Digital Products page for the full workflow.",
             },
           ]}
         />

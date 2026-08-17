@@ -3,9 +3,9 @@ import { PageHero } from "@/components/mdent/Hero";
 import { ImageTextSection, NumberedBenefitList, Section } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 
-const title = "Veneers | MDent — Middle East Dental Laboratory";
+const title = "Veneers | MDent: Middle East Dental Laboratory";
 const description =
-  "High-quality dental veneers crafted in Dubai by MDent — fit, durability and natural beauty for every case.";
+  "High-quality dental veneers crafted in Dubai by MDent: fit, durability and natural beauty for every case.";
 
 export const Route = createFileRoute("/veneers")({
   head: () => ({
@@ -29,8 +29,8 @@ function Page() {
       <PageHero title="Veneers">
         <p>
           A great veneer case comes down to two things: the material, and the technician behind it.
-          MDent crafts every veneer to the exact shade, translucency and contour your case calls for
-          — thin enough to preserve healthy tooth structure, strong enough to hold up for years.
+          MDent crafts every veneer to the exact shade, translucency and contour your case calls
+          for, thin enough to preserve healthy tooth structure, strong enough to hold up for years.
         </p>
         <div className="mt-8">
           <PlusLink to="/booking-form" variant="solid">
@@ -55,8 +55,8 @@ function Page() {
         </p>
         <p>
           Every veneer is layered and characterised by hand to match the shade tab or digital scan
-          you send us, then verified against your instructions before it ships — so what arrives at
-          your chair is what you specified, not an approximation.
+          you send us, then verified against your instructions before it ships. What arrives at your
+          chair is what you specified, not an approximation.
         </p>
       </ImageTextSection>
 
@@ -69,7 +69,7 @@ function Page() {
             },
             {
               lead: "True-to-Sample Shade Matching:",
-              text: "We match to physical shade tabs, digital scans, or reference photography — with a shade verification step before every case ships.",
+              text: "We match to physical shade tabs, digital scans, or reference photography, with a shade verification step before every case ships.",
             },
             {
               lead: "Consistent Fit, Case After Case:",

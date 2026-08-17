@@ -24,7 +24,7 @@ export function NewsletterForm() {
     if (dbError) {
       if (dbError.code === "23505") {
         setStatus("done");
-        setMessage("You're already subscribed — thank you for staying with us.");
+        setMessage("You're already on the list. Thanks for sticking with us.");
         return;
       }
       setStatus("idle");
@@ -33,7 +33,7 @@ export function NewsletterForm() {
     }
     setStatus("done");
     setEmail("");
-    setMessage("Thank you — you're on the list.");
+    setMessage("You're in! Thanks for subscribing.");
   }
 
   return (

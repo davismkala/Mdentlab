@@ -4,7 +4,7 @@ import { ImageTextSection, Section, NumberedBenefitList } from "@/components/mde
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Digital Products | MDent — Middle East Dental Laboratory";
+const title = "Digital Products | MDent: Middle East Dental Laboratory";
 const description =
   "CAD design, model printing and digital dental workflows from MDent's Dubai laboratory.";
 
@@ -29,8 +29,8 @@ function Page() {
     <>
       <PageHero title="Digital Products" image={IMAGES.technicians}>
         <p>
-          MDent's digital workflow runs from the first scan through to the finished restoration —
-          CAD design, model printing, smile design and surgical guides, all produced in-house on the
+          MDent's digital workflow runs from the first scan through to the finished restoration: CAD
+          design, model printing, smile design and surgical guides, all produced in-house on the
           same equipment, by the same team, so nothing gets lost in translation between steps.
         </p>
         <div className="mt-8">
@@ -49,7 +49,7 @@ function Page() {
         <p>
           Every crown, bridge, veneer and framework we produce starts life as a digital design. Our
           CAD technicians work from your scan or impression to design restorations with accurate
-          margins, contact points and occlusion — reviewed against your instructions before anything
+          margins, contact points and occlusion, reviewed against your instructions before anything
           is milled or printed.
         </p>
       </ImageTextSection>
@@ -63,8 +63,8 @@ function Page() {
         cta={{ label: "Get in Touch", to: "/booking-form" }}
       >
         <p>
-          For clinics working digitally who still want a physical model in hand — for try-in,
-          patient communication, or lab work that benefits from a solid cast — we 3D print
+          For clinics working digitally who still want a physical model in hand, whether for try-in,
+          patient communication, or lab work that benefits from a solid cast, we 3D print
           dimensionally accurate models directly from your scan data.
         </p>
       </ImageTextSection>
@@ -74,7 +74,7 @@ function Page() {
           items={[
             {
               lead: "One Digital File, Start to Finish:",
-              text: "Your scan drives the design, the model, and the final restoration — reducing the compounding error that comes from multiple manual steps.",
+              text: "Your scan drives the design, the model, and the final restoration, cutting out the compounding error that comes from multiple manual steps.",
             },
             {
               lead: "Compatible with Leading Scanners:",

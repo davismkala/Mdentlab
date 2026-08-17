@@ -4,7 +4,7 @@ import { Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "ClearSmile Aligners | MDent — Middle East Dental Laboratory";
+const title = "ClearSmile Aligners | MDent: Middle East Dental Laboratory";
 const description =
   "ClearSmile clear aligners produced by MDent for dental clinics in the UAE and GCC.";
 

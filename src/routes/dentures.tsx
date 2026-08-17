@@ -3,7 +3,7 @@ import { PageHero } from "@/components/mdent/Hero";
 import { ImageTextSection, Section, NumberedBenefitList } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 
-const title = "Dentures | MDent — Middle East Dental Laboratory";
+const title = "Dentures | MDent: Middle East Dental Laboratory";
 const description =
   "Acrylic, flexible and chrome RPD dentures crafted by MDent in Dubai for exceptional fit and comfort.";
 
@@ -28,7 +28,7 @@ function Page() {
     <>
       <PageHero title="Dentures">
         <p>
-          Comfort and fit are what patients remember about a denture — good or bad. MDent produces
+          Comfort and fit are what patients remember about a denture, good or bad. MDent produces
           acrylic, flexible and chrome RPD dentures built around accurate impressions and careful
           bite registration, so your patients get a denture that fits from the first visit.
         </p>
@@ -79,7 +79,7 @@ function Page() {
       >
         <p>
           For cases that need the strength and precision of a cast metal framework, our chrome
-          cobalt RPDs are designed for accurate clasp placement and a rigid, stable fit — built to
+          cobalt RPDs are designed for accurate clasp placement and a rigid, stable fit, built to
           distribute biting forces evenly and protect the remaining natural dentition over the long
           term.
         </p>
@@ -90,7 +90,7 @@ function Page() {
           items={[
             {
               lead: "Accurate Bite Registration:",
-              text: "We work closely with your recorded bite and occlusal plane to avoid the most common source of denture remakes — a bite that's off.",
+              text: "We work closely with your recorded bite and occlusal plane to avoid the most common source of denture remakes: a bite that's off.",
             },
             {
               lead: "Natural Tooth Set-Up:",

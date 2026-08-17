@@ -3,7 +3,7 @@ import { PageHero } from "@/components/mdent/Hero";
 import { Section } from "@/components/mdent/Sections";
 import { SITE } from "@/lib/site";
 
-const title = "Terms and Conditions | MDent — Middle East Dental Laboratory";
+const title = "Terms and Conditions | MDent: Middle East Dental Laboratory";
 const description =
   "Terms and conditions for dental clinics working with Middle East Dental Laboratory.";
 

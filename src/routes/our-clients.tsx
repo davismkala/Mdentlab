@@ -5,7 +5,7 @@ import { EyebrowHeading } from "@/components/mdent/Eyebrow";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { IMAGES } from "@/lib/site";
 
-const title = "Our Clients | MDent — Middle East Dental Laboratory";
+const title = "Our Clients | MDent: Middle East Dental Laboratory";
 const description =
   "Dental clinics across the UAE, GCC and worldwide trust MDent for their restorations.";
 
@@ -51,8 +51,8 @@ function Page() {
           heading="Trusted by Clinics of Every Size, Across the Region"
         />
         <p className="measure mt-8 text-base leading-relaxed text-muted-foreground">
-          We work with clinics of all sizes — from single-chair practices to large multi-branch
-          groups — providing the same level of care and craftsmanship regardless of order volume.
+          We work with clinics of every size, from single-chair practices to large multi-branch
+          groups, providing the same level of care and craftsmanship regardless of order volume.
           Whatever the scale of your practice, your cases get the same standard.
         </p>
 
