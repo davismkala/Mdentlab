@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/mdent/Hero";
 import { Section } from "@/components/mdent/Sections";
-import { SITE } from "@/lib/site";
+import { SITE, IMAGES } from "@/lib/site";
 
 const title = "Terms and Conditions | MDent: Middle East Dental Laboratory";
 const description =
@@ -15,10 +15,12 @@ export const Route = createFileRoute("/terms-and-conditions")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/terms-and-conditions" },
+      { property: "og:url", content: "https://mdentlab.com/terms-and-conditions" },
+      { property: "og:image", content: IMAGES.closing },
+      { name: "twitter:image", content: IMAGES.closing },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/terms-and-conditions" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/terms-and-conditions" }],
   }),
   component: Page,
 });

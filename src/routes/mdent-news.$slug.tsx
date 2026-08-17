@@ -1,42 +1,57 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { PageHero } from "@/components/mdent/Hero";
 import { Section } from "@/components/mdent/Sections";
 import { PlusLink } from "@/components/mdent/PlusLink";
 import { formatDate, type BlogPost } from "@/components/mdent/NewsSection";
+import { IMAGES } from "@/lib/site";
 
-function postQuery(slug: string) {
-  return {
-    queryKey: ["blog_post", slug],
-    queryFn: async (): Promise<BlogPost | null> => {
-      const { data, error } = await supabase
-        .from("blog_posts")
-        .select("id, slug, title, excerpt, body, author_name, published_at, featured_image_url")
-        .eq("slug", slug)
-        .eq("is_published", true)
-        .maybeSingle();
-      if (error) throw error;
-      return (data ?? null) as BlogPost | null;
-    },
-  };
+async function fetchPost(slug: string): Promise<BlogPost | null> {
+  const { data, error } = await supabase
+    .from("blog_posts")
+    .select("id, slug, title, excerpt, body, author_name, published_at, featured_image_url")
+    .eq("slug", slug)
+    .eq("is_published", true)
+    .maybeSingle();
+  if (error) throw error;
+  return (data ?? null) as BlogPost | null;
 }
 
 export const Route = createFileRoute("/mdent-news/$slug")({
-  head: ({ params }) => ({
-    meta: [
-      { title: "MDent News | Middle East Dental Laboratory" },
-      {
-        name: "description",
-        content: "An article from MDent: Middle East Dental Laboratory, Dubai.",
-      },
-      { property: "og:type", content: "article" },
-      { property: "og:url", content: `/mdent-news/${params.slug}` },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [{ rel: "canonical", href: `/mdent-news/${params.slug}` }],
-  }),
+  loader: async ({ params }) => {
+    const post = await fetchPost(params.slug);
+    if (!post) throw notFound();
+    return post;
+  },
+  head: ({ loaderData, params }) => {
+    const url = `https://mdentlab.com/mdent-news/${params.slug}`;
+    const title = loaderData
+      ? `${loaderData.title} | MDent News`
+      : "MDent News | Middle East Dental Laboratory";
+    const description =
+      loaderData?.excerpt || "An article from MDent: Middle East Dental Laboratory, Dubai.";
+    const image = loaderData?.featured_image_url || IMAGES.technicians;
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:type", content: "article" },
+        { property: "og:url", content: url },
+        { property: "og:image", content: image },
+        { name: "twitter:image", content: image },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: url }],
+    };
+  },
   component: PostPage,
+  pendingComponent: () => (
+    <Section className="pt-40">
+      <div className="h-8 w-2/3 animate-pulse bg-sand" />
+    </Section>
+  ),
   notFoundComponent: () => (
     <>
       <PageHero title="Article not found" />
@@ -50,20 +65,7 @@ export const Route = createFileRoute("/mdent-news/$slug")({
 });
 
 function PostPage() {
-  const { slug } = Route.useParams();
-  const { data, isLoading, isError } = useQuery(postQuery(slug));
-
-  if (isLoading) {
-    return (
-      <Section className="pt-40">
-        <div className="h-8 w-2/3 animate-pulse bg-sand" />
-      </Section>
-    );
-  }
-
-  if (isError || !data) {
-    throw notFound();
-  }
+  const data = Route.useLoaderData();
 
   return (
     <>

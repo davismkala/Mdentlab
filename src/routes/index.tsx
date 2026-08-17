@@ -17,12 +17,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://mdentlab.com/" },
       { property: "og:image", content: IMAGES.technicians },
       { name: "twitter:image", content: IMAGES.technicians },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/" }],
   }),
   component: Index,
 });
@@ -45,7 +45,6 @@ function Index() {
         image={IMAGES.technicians}
         alt="Dental Lab Dubai - Middle East Dental Laboratory technicians at work"
         heading="The Leading Dental Lab in Dubai Since 1995"
-        headingLevel={1}
         cta={{ label: "More About Us", to: "/about-us" }}
       >
         <p>

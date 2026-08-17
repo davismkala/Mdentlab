@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { PageHero } from "@/components/mdent/Hero";
 import { Section } from "@/components/mdent/Sections";
 import { NewsCard, latestPostsQuery } from "@/components/mdent/NewsSection";
+import { IMAGES } from "@/lib/site";
 
 const title = "MDent News | Dental Lab Insights from Middle East Dental Laboratory";
 const description =
@@ -16,10 +17,12 @@ export const Route = createFileRoute("/mdent-news/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/mdent-news" },
+      { property: "og:url", content: "https://mdentlab.com/mdent-news" },
+      { property: "og:image", content: IMAGES.technicians },
+      { name: "twitter:image", content: IMAGES.technicians },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/mdent-news" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/mdent-news" }],
   }),
   component: NewsIndex,
 });

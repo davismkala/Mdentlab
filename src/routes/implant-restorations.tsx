@@ -16,10 +16,20 @@ export const Route = createFileRoute("/implant-restorations")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/implant-restorations" },
+      { property: "og:url", content: "https://mdentlab.com/implant-restorations" },
+      {
+        property: "og:image",
+        content:
+          "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/implant.jpg?w=1200&ssl=1",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/implant.jpg?w=1200&ssl=1",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/implant-restorations" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/implant-restorations" }],
   }),
   component: Page,
 });

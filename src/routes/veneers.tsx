@@ -15,10 +15,20 @@ export const Route = createFileRoute("/veneers")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/veneers" },
+      { property: "og:url", content: "https://mdentlab.com/veneers" },
+      {
+        property: "og:image",
+        content:
+          "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/veneers.jpg?w=1200&ssl=1",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/veneers.jpg?w=1200&ssl=1",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/veneers" }],
+    links: [{ rel: "canonical", href: "https://mdentlab.com/veneers" }],
   }),
   component: Page,
 });
