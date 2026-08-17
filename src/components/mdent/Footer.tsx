@@ -95,15 +95,7 @@ export function Footer() {
           <Link to="/" className="hover:text-teal-soft">
             Middle East Dental Lab
           </Link>
-          . All Rights Reserved. Made with 🤍 by{" "}
-          <a
-            href="https://strategine.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="hover:text-teal-soft"
-          >
-            Strategine Consulting
-          </a>
+          . All Rights Reserved. Made with 🤍 by davismkala
         </div>
       </div>
     </footer>
