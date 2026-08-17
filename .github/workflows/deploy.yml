@@ -38,6 +38,11 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # wrangler-action defaults to an old Wrangler (3.90.0) that can't
+          # parse wrangler.jsonc, so it fails with "Required Worker name
+          # missing" before it ever reaches Cloudflare. Pin a modern major
+          # version that reads wrangler.jsonc correctly.
+          wranglerVersion: "4"
           secrets: |
             SUPABASE_URL
             SUPABASE_PUBLISHABLE_KEY
