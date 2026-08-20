@@ -1,3 +1,11 @@
+// The header and footer share the same dark navy background, so both use
+// this white logo. (The footer previously linked a second i0.wp.com URL
+// that was never fetched through the proxy before, so on a cache miss it
+// would try, and fail, to reach mdentlab.com/wp-content/... directly,
+// since that path no longer exists on the old WordPress origin.)
+const LOGO_WHITE_URL =
+  "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/09/White-logo-1536x578-1.png?fit=1024%2C385&ssl=1";
+
 export const SITE = {
   name: "MDent: Middle East Dental Laboratory",
   shortName: "MDent",
@@ -6,9 +14,8 @@ export const SITE = {
   phone: "+971 4 332 9201",
   phoneHref: "tel:+97143329201",
   whatsapp: "https://wa.me/97143329201",
-  logoWhite:
-    "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/09/White-logo-1536x578-1.png?fit=1024%2C385&ssl=1",
-  logoFooter: "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/mdent-trans.png?ssl=1",
+  logoWhite: LOGO_WHITE_URL,
+  logoFooter: LOGO_WHITE_URL,
 };
 
 export const SOCIALS = [
