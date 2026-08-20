@@ -8,7 +8,7 @@ export const SITE = {
   whatsapp: "https://wa.me/97143329201",
   logoWhite:
     "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/09/White-logo-1536x578-1.png?fit=1024%2C385&ssl=1",
-  logoFooter: "https://mdentlab.com/wp-content/uploads/2024/08/mdent-trans.png",
+  logoFooter: "https://i0.wp.com/mdentlab.com/wp-content/uploads/2024/08/mdent-trans.png?ssl=1",
 };
 
 export const SOCIALS = [
