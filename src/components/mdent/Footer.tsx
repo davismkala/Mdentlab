@@ -46,7 +46,7 @@ export function Footer() {
           </div>
 
           <div>
-            <ColHeading>Usefull Links</ColHeading>
+            <ColHeading>Useful Links</ColHeading>
             <ul className="space-y-3">
               {FOOTER_USEFUL.map((item) => (
                 <li key={item.to}>

@@ -162,6 +162,7 @@ export const FOOTER_SERVICES: NavLeaf[] = [
 ];
 
 export const FOOTER_USEFUL: NavLeaf[] = [
+  { label: "Dental Lab UAE", to: "/dental-lab-uae" },
   { label: "About Us", to: "/about-us" },
   { label: "MDent Team", to: "/mdent-team" },
   { label: "Careers", to: "/careers" },
